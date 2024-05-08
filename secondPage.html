@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRT Card Recharge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containersecondpage">
+        <div class="containerheadsecondpage">
+            <img src="Images/logo.png" alt="logopng" id="firstlogosecondpage">
+            <h1>Place your Zu Card on the reader</h1>
+            <img src="Images/logonum2.png" alt="logonum2" id="secondlogosecondpage">
+          </div>
+          <img src="Peshawar-BRT-B-12-08-1024x640.jpg" alt="img"  id="placecardimg"> <br><br><br><br>
+          <button class="firstback">Back</button><button id="next">Next</button>
+          
+        </div>
+
+        <script> 
+            let firstback = document.querySelector(".firstback");
+firstback.addEventListener("click" , () =>{
+    window.open("index.html","_parent");
+});
+let firstNext = document.querySelector("#next");
+firstNext.addEventListener("click" , () =>{
+    window.open("ThirdScreen.html","_parent");
+});
+        </script>
+</body>
+</html>

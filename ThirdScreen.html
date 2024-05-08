@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRT Card Recharge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerthirdpage">
+        <div class="containerheadthirdpage">
+            <img src="Images/logo.png" alt="logopng" id="firstlogothirdpage">
+            <h1>Slect mode of payment</h1>
+            <img src="Images/logonum2.png" alt="logonum2" id="secondlogothirdpage">
+          </div>
+          <div class="amountcontainer">
+            <div class="forthscreencard" id="forthscreencash">Cash</div>
+            <div class="forthscreencard">Credit/Debit <br>Card</div> 
+            <div class="forthscreencard">Jazz cash</div>
+            <div class="forthscreencard">Easy paisa</div>
+          </div> <br>
+          <button id="Back">Back</button>
+    </div>
+    <script>
+      let gotoForthScreen = document.querySelector("#forthscreencash");
+      gotoForthScreen.onclick = () =>{
+    window.open("ForthScreen.html","_parent");
+    };
+    let Back = document.querySelector("#Back");
+    Back.addEventListener("click" , () => {
+        window.open("secondPage.html","_parent");
+    })
+    </script>
+</body>
+</html>

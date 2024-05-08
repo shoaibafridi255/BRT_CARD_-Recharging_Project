@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRT Card Recharge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containerthirdpage">
+        <div class="containerheadthirdpage">
+            <img src="Images/logo.png" alt="logopng" id="firstlogothirdpage">
+            <h1>Select the amount for Recharge</h1>
+            <img src="Images/logonum2.png" alt="logonum2" id="secondlogothirdpage">
+          </div>
+          <div class="amountcontainer">
+            <div class="cards" id="card1" >Rs.50</div>
+            <div class="cards" id="card2" >RS.100</div> 
+            <div class="cards" id="card3" >Rs.500</div>
+            <div class="cards" id="card4" >RS.1000</div>
+          </div> <br>
+          <button id="Back">Back</button>
+    </div>
+    <script>
+      let Back = document.querySelector("#Back");
+    Back.addEventListener("click" , () => {
+        window.open("ThirdScreen.html","_parent");
+    })
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

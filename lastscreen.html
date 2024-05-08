@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRT Card Recharge</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+    <div class="containerthirdpage">
+        <div class="containerheadthirdpage">
+            <img src="Images/logo.png" alt="logopng" id="firstlogothirdpage">
+            <h1>Final Result!</h1>
+            <img src="Images/logonum2.png" alt="logonum2" id="secondlogothirdpage">
+          </div>
+          <h1 id="congrat" class="animate__animated animate__flash" >Congratulation!</h1>
+          <p id="lastpara">Your Card has been Successfully Recharged.</p>
+          <div class="lastdiv">
+            <h1 class="newbalance" class="animate__animated animate__flash"></h1>
+          </div>
+          <br>
+          <button id="Back">Back</button><button id="done">Done</button>
+    </div>
+
+
+
+    <script>
+    let buttonBack = document.querySelector("#Back");
+buttonBack.addEventListener("click" , () => {
+    window.open("ForthScreen.html","_parent");
+})
+let done = document.querySelector("#done");
+done.addEventListener("click" , () => {
+    window.open("index.html","_parent");
+});
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
